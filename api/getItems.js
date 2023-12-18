@@ -1,9 +1,7 @@
-module.exports = (req, res) => {
-    // In a real application, you would fetch items from the database here
-    const items = [
-        { id: '1', itemName: 'Item 1' },
-        { id: '2', itemName: 'Item 2' },
-    ];
+// getItems.js
+let items = [];  // Array untuk menyimpan item
 
+module.exports = (req, res) => {
+    // Mengembalikan seluruh array item
     res.status(200).json(items);
 };
